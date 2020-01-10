@@ -2,13 +2,20 @@
 	box-sizing: border-box;
 }
 
+nav {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+}
+
+nav a {
+	text-decoration: none;
+}
+
 .shop-nav {
 	background-color: #f8f8f8;
 	overflow: auto;
 	padding: 5px 0;
 	font-color: #b7b7b8;
-	font-family: 'Ubuntu', sans-serif;
-	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 13px;
 }
@@ -40,7 +47,6 @@
 }
 
 .shop-nav a {
-	text-decoration: none;
 	color: #b7b7b8;
 }
 
@@ -76,6 +82,7 @@ input {
 
 input[type="submit"] {
 	border: 1px solid #b7b7b8;
+	margin-right: 15px;
 }
 
 input[type="text"] {
@@ -85,6 +92,23 @@ input[type="text"] {
 	font-size: 13px;
 	border: none;
 	padding: 5px;
+}
+
+/* Main-nav elements */
+
+.logo {
+	margin: 35px auto;
+	width: 306px;
+}
+
+.nav-mobile-menu {
+	border: 2px solid #000000;
+	margin: 5px 15px;
+	padding: 10px 15px;
+}
+
+.main-nav-links {
+	display: none;
 }
 
 @media screen and (min-width: 621px) {	

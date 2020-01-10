@@ -29,6 +29,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	margin-right: 15px;
 }
 
 .account-links {
@@ -46,6 +47,7 @@
 a.shop-nav-link {
 	display: inline-block;
 	padding: 5px 10px;
+	border-right: 1px solid #b7b7b8;
 }
 
 a.nav-account-link {
@@ -82,17 +84,35 @@ input[type="text"] {
 	font-weight: bold;
 	font-size: 13px;
 	border: none;
+	padding: 5px;
 }
 
-@media screen and (min-width:768px) {
-	.center-content: {
-		width: 640px;
+@media screen and (min-width: 621px) {	
+	.center-content {
+		width: 600px;
 	}
 }
 
-@media screen and (min-width:950px) {
-	.center-content: {
+@media screen and (min-width: 950px) {
+	.center-content {
 		width: 900px;
+	}
+	
+	.top-search {
+		position: relative;
+		float: right;
+	}
+	
+	.shop-links {
+		position: relative;
+		float: right;
+		border-left: 1px solid #b7b7b8;
+	}
+	
+	.account-links {
+		position: relative;
+		float: right;
+		padding: 5px;
 	}
 }
 

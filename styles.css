@@ -69,7 +69,7 @@ ul {
 	overflow: auto;
 }
 
-li {
+.shop-nav li {
 	display: block;
 	float: left;
 	width: 33%;
@@ -115,6 +115,10 @@ input[type="text"] {
 	.center-content {
 		width: 600px;
 	}
+	
+	.nav-mobile-menu {
+		margin: 5px 0;
+	}
 }
 
 @media screen and (min-width: 950px) {
@@ -137,6 +141,20 @@ input[type="text"] {
 		position: relative;
 		float: right;
 		padding: 5px;
+	}
+	
+	.nav-mobile-menu {
+		display: none;
+	}
+	
+	.main-nav-links {
+		display: block;
+	}
+	
+	.main-nav li {
+		display: inline-block;
+		float: left;
+		text-align: center;
 	}
 }
 

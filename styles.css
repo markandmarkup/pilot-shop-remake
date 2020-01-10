@@ -6,6 +6,9 @@
 	background-color: #f8f8f8;
 	overflow: auto;
 	padding: 5px 0;
+	font-color: #b7b7b8;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
 }
 
 .center-content {
@@ -28,22 +31,38 @@
 
 .account-links {
 	margin: 0 auto;
-	width: 300px;
-	padding-top: 35px;
+	width: 330px;
+	padding-top: 38px;
+	padding-bottom: 5px;
+}
+
+.shop-nav a {
+	text-decoration: none;
+	color: #b7b7b8;
+}
+
+a.shop-nav-link {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+a.nav-account-link {
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 ul {
 	list-style-type: none;
-	border: 1px solid black;
 	margin: 0;
 	padding: 0;
+	overflow: auto;
 }
 
 li {
 	display: block;
 	float: left;
 	width: 33%;
-	border: 1px solid black;
 	text-align: center;
 }
 

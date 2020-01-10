@@ -14,7 +14,7 @@
 }
 
 .center-content {
-	width: 500px;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 }
@@ -84,5 +84,16 @@ input[type="text"] {
 	border: none;
 }
 
+@media screen and (min-width:768px) {
+	.center-content: {
+		width: 640px;
+	}
+}
+
+@media screen and (min-width:950px) {
+	.center-content: {
+		width: 900px;
+	}
+}
 
 

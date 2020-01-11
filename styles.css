@@ -24,12 +24,14 @@ nav a {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+	overflow: auto;
 }
 
 .top-search {
 	position: absolute;
 	top: 0;
 	right: 0;
+	margin-right: 15px;
 }
 
 .shop-links {
@@ -82,7 +84,6 @@ input {
 
 input[type="submit"] {
 	border: 1px solid #b7b7b8;
-	margin-right: 15px;
 }
 
 input[type="text"] {
@@ -96,14 +97,18 @@ input[type="text"] {
 
 /* Main-nav elements */
 
+.main-nav {
+	padding: 35px 0;
+}
+
 .logo {
-	margin: 35px auto;
+	margin: 0 auto 35px auto;
 	width: 306px;
 }
 
 .nav-mobile-menu {
 	border: 2px solid #000000;
-	margin: 5px 15px;
+	margin: 0 15px;
 	padding: 10px 15px;
 }
 
@@ -111,7 +116,7 @@ input[type="text"] {
 	display: none;
 }
 
-@media screen and (min-width: 621px) {	
+@media screen and (min-width: 620px) {	
 	.center-content {
 		width: 600px;
 	}
@@ -121,14 +126,20 @@ input[type="text"] {
 	}
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1170px) {
 	.center-content {
-		width: 900px;
+		width: 1150px;
+	}
+	
+	.shop-nav {
+		font-size: 14px;
+		padding: 10px 0;
 	}
 	
 	.top-search {
 		position: relative;
 		float: right;
+		margin-right: 0;
 	}
 	
 	.shop-links {
@@ -147,14 +158,35 @@ input[type="text"] {
 		display: none;
 	}
 	
+	.logo {
+		float: left;
+		margin-bottom: 0;
+	}
+	
 	.main-nav-links {
 		display: block;
+		float: right;
+	}
+	
+	.main-nav-links a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 14px 20px;
+		color: #000000;
 	}
 	
 	.main-nav li {
 		display: inline-block;
 		float: left;
 		text-align: center;
+		margin: 0 5px;
+		font-weight: bold;
+		border: 2px solid #ffffff;
+	}
+	
+	.main-nav li:hover {
+		border: 2px solid #000000;
 	}
 }
 
